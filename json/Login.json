@@ -1,21 +1,18 @@
 [
     {
-        "usuario": "Juanin",
-        "contraseña": "juanin123",
+        "contraseña": "cliente123",
         "nombre": "Juan",
-        "apellido": "Gutierrez",
+        "apellido": "Hernandez",
         "tipo_de_cuenta": "Cliente",
-        "correo":"juannestebangutierrezarango@gmail.com"
+        "correo":"uncliente@gmail.com"
     },{
-        "usuario": "Deztrok",
-        "contraseña": "deztrok123",
+        "contraseña": "admin123",
         "nombre": "Andry",
         "apellido": "Sierra",
         "tipo_de_cuenta": "Admin",
-        "correo":"andrynosequemas@gmail.com"
+        "correo":"unadmin@gmail.com"
     },{
-        "usuario": "McDonalds79",
-        "contraseña": "123456789",
+        "contraseña": "mcdonald123",
         "nombre": "McDonalds79",
         "tipo_de_cuenta": "Restaurante",
         "correo":"mcdonalds@gmail.com"

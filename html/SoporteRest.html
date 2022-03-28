@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/Tabla.js"></script>
     <title>Soporte</title>
 </head>
 
@@ -70,7 +71,32 @@
                         </div>
 
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-danger btn-block mb-4">Enviar</button>
+                        <button type="button" class="btn btn-danger btn-block mb-4 " onclick="Tablas()">Enviar</button>
+                        <div class="table table-responsive table-bordered border-secondary">
+                            <table class="table table-bordered border-secondary" id="tabla" border="2">
+                                <tr>
+                                    <th>
+                                        Nombre
+                                    </th>
+                                    <th>
+                                        Apellido
+                                    </th>
+                                    <th>
+                                        Correo
+                                    </th>
+                                    <th>
+                                        Telefono
+                                    </th>
+                                    <th>
+                                        Queja
+                                    </th>
+                                    <th class="bg-danger">
+                                        Eliminar
+                                    </th>
+                                </tr>
+
+                            </table>
+                        </div>
                     </form>
                 </div>
                 <div class="col-lg-4 col-md-3 col-sm-4 ">

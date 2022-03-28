@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/Login.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <style>
+        .bg{
+            background-image: url(../img/Comidas.jpg);
+            background-position: center center;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div>
+        <header>
+            <div class="text-center bg-white">
+                <div class="encabezado">
+                    <img class="img-fluid w-30" src="../img/FastService.jpg">
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-light" aria-current="page" href="../index.html">Volver al inicio</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+        <div class="container w-75 rounded shadow">
+            <div class="row align-items-lg-stretch">
+                <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+    
+                </div>
+                <div class="col bg-white p-5 rounded-end">
+                    <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                    <form action="#">
+                        <div class="mb-4 ">
+                            <label for="email" class="form-label">Correo electronico</label>
+                            <input type="email" class="form-control" name="email" id="Correo">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" name="Contraseña" id="Pass">
+                        </div>
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" name="connected" class="form-check-input">
+                            <label for="connected" class="form-check-label">Mantener sesion</label>
+                        </div>
+                        <div class="d-grid text-center">
+                            <button type="button" class="btn btn-danger" onclick="Ini_Ses()">Iniciar sesion</button>
+                        </div>
+                        <div class="my-3">
+                            <span>¿No tienes cuenta? <a href="Registrarse.html">Registrate</a></span><br>
+                            <span>¿Ha olvidado su contraseña? <a href="#">Recuperar contraseña</a></span>
+                        </div>
+                    </form>
+                    <div class="container w-100 my-5">
+                        <div class="row text-center">
+                            <div class="col-12">Iniciar sesion</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-outline-primary w-100 my-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-2 d-none d-md-block">
+                                            <img src="../img/Facebook.png" width="32" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-10 text-center">
+                                            Facebook
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-danger w-100 my-1">
+                                    <div class="row align-items-center">
+                                        <div class="col-2 d-none d-md-block">
+                                            <img src="../img/Google.png" width="32" alt="">
+                                        </div>
+                                        <div class="col-12 col-md-10 text-center">
+                                            Google
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="bg-secondary text-center text-lg-start">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-12 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase text-center text-light">Creado por:</h5>
+
+                        <p class=" text-light text-center">
+                            Juan Gutierrez <br>
+                            Andry Sierra <br>
+                            Ever Angulo <br>
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3  text-light" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-light">ITSA</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+</body>
+</html>

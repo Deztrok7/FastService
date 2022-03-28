@@ -27,9 +27,12 @@ const Tablas=()=>{
     newtablarefcell.textContent=telefono
     newtablarefcell= newtablarow.insertCell(4)
     newtablarefcell.textContent=queja
+    let newdeletoption=newtablarow.insertCell(5)
+    let deletoption=document.createElement("button")
+    deletoption.textContent="Eliminar"
+    newdeletoption.appendChild(deletoption)
 
     deletoption.addEventListener("click",(event)=>{
-        console.log(event)
         event.target.parentNode.parentNode.remove()
     })
     
