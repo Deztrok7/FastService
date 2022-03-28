@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/Tabla.js"></script>
+    <script src="https://unpkg.com/xlsx@0.16.9/dist/xlsx.full.min.js"></script>
+    <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
+    <script src="https://unpkg.com/tableexport@latest/dist/js/tableexport.min.js"></script>
+    <title>Contactenos</title>
+</head>
+
+<body class="bg-light">
+    <header>
+        <div class="text-center bg-white">
+            <div class="encabezado">
+                <img class="img-fluid w-30" src="../img/FastService.jpg">
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link text-light" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link text-light" href="Inicio de sesion(Usuarios).html">Iniciar sesion</a>
+                        <a class="nav-link text-light text-end"
+                            href="Inicio de sesion(Restaurantes).html">Restaurantes</a>
+                        <a class="nav-link text-light" class="text-end" href="Registrarse.html">Registrate</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container bg-white shadow text-center">
+        <h2>Contactenos</h2>
+        <div class="container">
+            <div class="row mt-0 pt-5 pb-4 ">
+                <div class="col-lg-4 col-md-3 col-sm-4 ">
+
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4 ">
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
+                            <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label" for="form6Example1">Nombres</label>
+                                    <input type="text" id="Nombre" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label" for="form6Example2">Apellidos</label>
+                                    <input type="text" id="Apellidos" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form6Example5">Correo electronico</label>
+                            <input type="email" id="Correo" class="form-control" />
+
+                        </div>
+
+                        <!-- Number input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form6Example6">Telefono</label>
+                            <input type="number" id="cell" class="form-control" />
+
+                        </div>
+
+                        <!-- Message input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="form6Example7">Queja</label>
+                            <textarea class="form-control" id="queja" rows="4"></textarea>
+
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="button" class="btn btn-danger btn-block mb-4" onclick="Tablas()">Enviar</button>
+                        <button type="button" id="btnExportar" class="btn btn-success btn-block mb-4">
+                            <i class="fas fa-file-excel"></i> Exportar datos a Excel
+                        </button>
+                        <div class="tableformat">
+                            <table id="tabla" hidden>
+                                <tr>
+                                    <th>
+                                        Nombre
+                                    </th>
+                                    <th>
+                                        Apellido
+                                    </th>
+                                    <th>
+                                        Correo
+                                    </th>
+                                    <th>
+                                        Telefono
+                                    </th>
+                                    <th>
+                                        Queja
+                                    </th>
+                                </tr>
+
+                            </table>
+                    </form>
+                    <script>
+                        const $btnExportar = document.querySelector("#btnExportar"),
+                            $tabla = document.querySelector("#tabla");
+
+                        $btnExportar.addEventListener("click", function () {
+                            let tableExport = new TableExport($tabla, {
+                                exportButtons: false,
+                                filename: "Datos contactanos",
+                                sheetname: "Datos contactanos",
+                            });
+                            let datos = tableExport.getExportData();
+                            let preferenciasDocumento = datos.tabla.xlsx;
+                            tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
+                        });
+                    </script>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-4 ">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-secondary text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-12 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-center text-light">Creado por:</h5>
+
+                    <p class=" text-light text-center">
+                        Juan Gutierrez <br>
+                        Andry Sierra <br>
+                        Ever Angulo <br>
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3  text-light" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-light">ITSA</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>

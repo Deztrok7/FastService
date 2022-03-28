@@ -1,0 +1,32 @@
+let datos = [
+    {
+        usuario: "Juanin",
+        contraseña: "juanin123",
+        nombre: "Juan",
+        apellido: "Gutierrez",
+        tipo_de_cuenta: "Cliente",
+        correo:"juannestebangutierrezarango@gmail.com"
+    },{
+        usuario: "Deztrok",
+        contraseña: "deztrok123",
+        nombre: "Andry",
+        apellido: "Sierra",
+        tipo_de_cuenta: "Admin",
+        correo:"andrynosequemas@gmail.com"
+    },{
+        usuario: "McDonalds79",
+        contraseña: "123456789",
+        nombre: "McDonalds79",
+        tipo_de_cuenta: "Restaurante",
+        correo:"mcdonalds@gmail.com"
+    }
+]
+
+function login(){
+    var user, pass
+    user = document.getElementById("usuario").value
+    pass = document.getElementById("contraseña").value
+    if(user == datos){
+
+    }
+}
