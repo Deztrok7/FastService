@@ -10,7 +10,7 @@ const Ini_Ses = () => {
                             window.location.href = "../html/PagAdmin.html"
                         } else {
                             if (datos[i].tipo_de_cuenta == "Restaurante") {
-                                window.location.href = "../html/PagDeRestaurante.html"
+                                window.location.href = "../html/PagRestaurante.html"
                             } else {
                                 if (datos[i].tipo_de_cuenta == "Cliente") {
                                     window.location.href = "../html/PaginaDeUsuarios.html"
